@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Dance Of Scratch And Code - 主页</title>
+    <link rel="icon" href="ADOSAC.png" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        nav {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .logo:hover {
+            color: #3498db;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 2rem;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+        }
+        .features-section {
+            margin: 4rem 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            font-size: 2rem;
+        }
+        .feature-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature-title {
+            color: #3498db;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        .feature-status {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+        .status-stable {
+            background-color: #27ae60;
+            color: white;
+        }
+        .status-beta {
+            background-color: #f39c12;
+            color: white;
+        }
+        .feature-desc {
+            color: #555;
+            line-height: 1.6;
+        }
+        .feature-details {
+            margin-top: 0.5rem;
+            padding-left: 1rem;
+            border-left: 3px solid #3498db;
+            color: #666;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">A Dance Of Scratch And Code</a>
+        <div class="nav-links">
+            <a href="features.html">功能介绍</a>
+            <a href="versions.html">版本</a>
+            <a href="changelog.html">更新日志</a>
+            <a href="contact.html">联系我们</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h1>自研引擎，迅捷高效</h1>
+            <p>A Dance Of Scratch And Code 新时代冰与火之舞文件播放器，实现代码与播放的完美转换</p>
+            <a href="versions.html" class="download-btn">立即下载</a>
+        </section>
+
+        <section class="features-section">
+            <h2 class="section-title">核心功能特点</h2>
+            
+            <div class="feature-card">
+                <h3 class="feature-title">1. 支持运镜</h3>
+                <span class="feature-status status-beta">Beta版 (有少许bug)</span>
+                <p class="feature-desc">运镜完全支持，支持导入</p>
+                <div class="feature-details">
+                    <p>• 支持原版运镜功能</p>
+                    <p>• 开发周期：3天</p>
+                    <p>• 当前状态：支持缓速运镜，仍有少许bug待修复</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <h3 class="feature-title">2. 支持移动轨道</h3>
+                <span class="feature-status status-beta">Beta版 (部分功能待完善)</span>
+                <p class="feature-desc">移动轨道支持，让轨道动起来</p>
+                <div class="feature-details">
+                    <p>• 支持基础移动轨道功能</p>
+                    <p>• 开发周期：1周</p>
+                    <p>• 当前状态：支持缓速、间隔移动，暂不支持透明度调整</p>
+                    <p>• 已知问题：部分移动效果仍有bug</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <h3 class="feature-title">3. 支持位置轨道</h3>
+                <span class="feature-status status-stable">稳定版</span>
+                <p class="feature-desc">精确控制轨道位置，完美呈现关卡设计美学</p>
+                <div class="feature-details">
+                    <p>• 完全支持位置轨道功能</p>
+                    <p>• 当前状态：无已知bug，运行稳定</p>
+                    <p>• 支持所有基础位置调整功能</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <h3 class="feature-title">4. 独具特色的ADOSAC文件</h3>
+                <span class="feature-status status-stable">稳定版</span>
+                <p class="feature-desc">创新的文件格式，简化文件导入流程</p>
+                <div class="feature-details">
+                    <p>• 独特的.adosac单行文件格式</p>
+                    <p>• 高效保存音乐文件和所有运行文件</p>
+                    <p>• 极大简化adofai文件大小</p>
+                    <p>• 示例：<code>main.adosac</code> </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

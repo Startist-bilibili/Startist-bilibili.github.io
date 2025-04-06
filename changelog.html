@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Dance Of Scratch And Code - 更新日志</title>
+    <link rel="icon" href="ADOSAC.png" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        nav {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .logo:hover {
+            color: #3498db;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .changelog {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .version-changes {
+            margin-bottom: 2rem;
+        }
+        .version-title {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        .change-list {
+            list-style-type: none;
+        }
+        .change-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .change-list li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .change-type {
+            font-weight: bold;
+        }
+        .change-type.added {
+            color: #27ae60;
+        }
+        .change-type.fixed {
+            color: #3498db;
+        }
+        .change-type.changed {
+            color: #f39c12;
+        }
+        .change-type.removed {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">A Dance Of Scratch And Code</a>
+        <div class="nav-links">
+            <a href="features.html">功能介绍</a>
+            <a href="versions.html">版本</a>
+            <a href="changelog.html">更新日志</a>
+            <a href="contact.html">联系我们</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>更新日志 (第二次重做版)</h1>
+        
+        <div class="changelog">
+            <div class="version-changes">
+                <h3 class="version-title">v2.6.5 (2024-04-04)</h3>
+                <ul class="change-list">
+                    <li><span class="change-type added">新增</span> 导入导出.adosac文件</li>
+                    <li><span class="change-type added">新增</span> 导入.zip文件</li>
+                    <li><span class="change-type changed">改进</span> 完全重新设计的用户界面</li>
+                    <li><span class="change-type changed">改进</span> 运行性能提升40%</li>
+                    <li><span class="change-type fixed">修复</span> 部分情况下移动轨道不运行问题</li>
+                </ul>
+            </div>
+            
+            <div class="version-changes">
+                <h3 class="version-title">v2.6.0 (2025-04-01)</h3>
+                <ul class="change-list">
+                    <li><span class="change-type added">新增</span> UI界面</li>
+                    <li><span class="change-type fixed">修复</span> 移动轨道更多问题</li>
+                </ul>
+            </div>
+
+            <div class="version-changes">
+                <h3 class="version-title">v2.5.0 (2025-03-29)</h3>
+                <ul class="change-list">
+                    <li><span class="change-type added">新增</span> 移动摄像机</li>
+                    <li><span class="change-type fixed">修复</span> 移动轨道问题</li>
+                </ul>
+            </div>
+
+            <div class="version-changes">
+                <h3 class="version-title">v2.4.5 (2025-03-25)</h3>
+                <ul class="change-list">
+                    <li><span class="change-type added">新增</span> 移动轨道</li>
+                    <li><span class="change-type fixed">修复</span> 部分位置轨道问题</li>
+                </ul>
+            </div>
+
+            <div class="version-changes">
+                <h3 class="version-title">v2.3.5 (2025-03-16)</h3>
+                <ul class="change-list">
+                    <li><span class="change-type fixed">修复</span> 继续优化bug</li>
+                    <li><span class="change-type fixed">修复</span> 摄像机误差问题</li>
+                </ul>
+            </div>
+
+            <div class="version-changes">
+                <h3 class="version-title">v2.3.0 (2025-03-09)</h3>
+                <ul class="change-list">
+                    <li><span class="change-type added">新增</span> 位置轨道</li>
+                    <li><span class="change-type fixed">修复</span> 继续优化帧率</li>
+                </ul>
+            </div>
+
+            <div class="version-changes">
+                <h3 class="version-title">v2.2.1 (2025-03-05)</h3>
+                <ul class="change-list">
+                    <li><span class="change-type added">新增</span> 暂停-角度前移矫正</li>
+                    <li><span class="change-type added">新增</span> 轨道全部加载</li>
+                    <li><span class="change-type fixed">修复</span> 中旋部分问题</li>
+                </ul>
+            </div>
+
+            <div class="version-changes">
+                <h3 class="version-title">v2.1.9 (2025-03-04)</h3>
+                <ul class="change-list">
+                    <li><span class="change-type added">新增</span> 球轨迹绘画</li>
+                    <li><span class="change-type added">新增</span> 绘画事件信息</li>
+                    <li><span class="change-type added">新增</span> 中断播放</li>
+                    <li><span class="change-type fixed">修复</span> 部分摄像机问题</li>
+                </ul>
+            </div>
+            
+            <div class="version-changes">
+                <h3 class="version-title">v2.1.0 (2025-03-02)</h3>
+                <ul class="change-list">
+                    <li><span class="change-type added">新增</span> 球运动计算</li>
+                    <li><span class="change-type added">新增</span> 事件计算</li>
+                    <li><span class="change-type changed">改进</span> 运镜跟随更改</li>
+                    <li><span class="change-type changed">改进</span> 启动时间缩短30%</li>
+                    <li><span class="change-type changed">改进</span> 优化帧率</li>
+                </ul>
+            </div>
+            
+            <div class="version-changes">
+                <h3 class="version-title">v2.0.2 (2025-02-24)</h3>
+                <ul class="change-list">
+                    <li><span class="change-type added">新增</span> 图章画笔轨道</li>
+                    <li><span class="change-type added">新增</span> 异步计算节拍</li>
+                    <li><span class="change-type added">新增</span> 摄像机跟随球</li>
+                    <li><span class="change-type added">新增</span> 导入谱面文件</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
